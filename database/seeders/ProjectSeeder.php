@@ -22,10 +22,11 @@ class ProjectSeeder extends Seeder
             $newProject->title = $project['title'];
             $newProject->github = $project['github'];
             $newProject->slug = Str::slug($project['title'], '-');
-            $newProject->logo = $project['logo'];
+            $newProject->logo = ProjectSeeder::storelogo($project['logo'], $newProject->slug);
             $newProject->image = ProjectSeeder::storeimage($project['image'], $newProject->slug);
             $newProject->status = $project['status'];
             $newProject->description = $project['description'];
+            $newProject->category_id = 9;
             $newProject->save();
         }
     }
@@ -34,6 +35,14 @@ class ProjectSeeder extends Seeder
         $contents = file_get_contents(resource_path('img/' . $imgUrl));
         $imageName = $slug . '.png';
         $path = 'uploads/' . $imageName;
+        Storage::put($path, $contents);
+        return $imageName;
+    }
+    public static function storelogo($logoUrl, $slug)
+    {
+        $contents = file_get_contents(resource_path('img/' . $logoUrl));
+        $imageName = $slug . '-logo.png';
+        $path = 'logos/' . $imageName;
         Storage::put($path, $contents);
         return $imageName;
     }

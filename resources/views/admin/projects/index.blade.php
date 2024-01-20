@@ -51,7 +51,7 @@
                             </a>
                             @endforeach
                         @else 
-                            <span class="text-black">No technologies</span>
+                            <span class="text-muted">No technologies</span>
                         @endif
                         
                     </td>

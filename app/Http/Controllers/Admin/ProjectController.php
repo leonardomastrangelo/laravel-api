@@ -49,6 +49,12 @@ class ProjectController extends Controller
             $image->storeAs('uploads', $imageName);
             $formData['image'] = $imageName;
         }
+        if ($request->hasFile('logo')) {
+            $logo = $request->file('logo');
+            $logoName = $slug . '.' . $logo->getClientOriginalExtension();
+            $logo->storeAs('logos', $logoName);
+            $formData['logo'] = $logoName;
+        }
         // Creazione di un nuovo progetto
         $newProject = Project::create($formData);
         // se la richiesta ha la chiave technologies allora attacca al progetto la tecnologia
@@ -101,7 +107,17 @@ class ProjectController extends Controller
             $path = $image->storeAs('uploads', $imageName);
             $formData['image'] = $path;
         }
-
+        if ($request->hasFile('logo')) {
+            // Eliminazione dell'immagine precedente
+            if ($project->logo) {
+                Storage::delete($project->logo);
+            }
+            // Salvataggio della nuova immagine nello storage con il nome dello slug
+            $logo = $request->file('logo');
+            $logoName = $slug . '.' . $logo->getClientOriginalExtension();
+            $path = $logo->storeAs('logos', $logoName);
+            $formData['logo'] = $path;
+        }
         $project->update($formData);
 
         if ($request->has('technologies')) {
@@ -122,6 +138,9 @@ class ProjectController extends Controller
     {
         if ($project->image) {
             Storage::delete('uploads/' . $project->image);
+        }
+        if ($project->logo) {
+            Storage::delete('logos/' . $project->logo);
         }
         $project->technologies()->detach();
         $project->delete();

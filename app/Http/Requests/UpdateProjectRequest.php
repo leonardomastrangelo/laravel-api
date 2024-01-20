@@ -25,7 +25,7 @@ class UpdateProjectRequest extends FormRequest
         return [
             'category_id' => ['nullable', 'exists:categories,id'],
             'title' => ['required', 'min:3', 'max:200', Rule::unique('projects')->ignore($this->project)],
-            'logo' => ['nullable', 'min:4', 'max:255'],
+            'logo' => ['nullable', 'image'],
             'image' => ['nullable', 'image'],
             'github' => ['required', 'url', Rule::unique('projects')->ignore($this->project), 'min:4', 'max:255'],
             'status' => ['nullable'],
@@ -40,8 +40,7 @@ class UpdateProjectRequest extends FormRequest
             'title.required' => 'The title field is required.',
             'title.min' => 'The title must be at least :min characters.',
             'title.max' => 'The title may not be greater than :max characters.',
-            'logo.min' => 'The logo must be at least :min characters.',
-            'logo.max' => 'The logo may not be greater than :max characters.',
+            'logo.image' => 'The logo must be an image.',
             'image.image' => 'The image must be an image.',
             'github.required' => 'The github field is required.',
             'github.url' => 'The github field is invalid.',

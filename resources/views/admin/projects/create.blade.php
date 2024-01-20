@@ -11,9 +11,9 @@
             @error('title')
                 <div class="invalid-feedback">{{ $message }}</div>
             @enderror
-            <div class="form-group w-25">
+            <div class="form-group w-50">
                 <label for="logo">Logo</label>
-                <input type="text" class="form-control @error('logo') is-invalid @enderror" id="logo" name="logo" placeholder="logo.png" maxlength="255" minlength="3" value="{{old('logo')}}">
+                <input type="file" class="form-control w-50 m-auto @error('logo') is-invalid @enderror" id="logo" name="logo">
             </div>
             @error('logo')
                 <div class="invalid-feedback">{{ $message }}</div>

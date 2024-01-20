@@ -17,7 +17,10 @@
             @enderror
             <div class="form-group w-25">
                 <label for="logo">Logo</label>
-                <input type="text" class="form-control @error('logo') is-invalid @enderror" id="logo" name="logo" placeholder="logo.png" maxlength="255" minlength="3" value="{{old('logo', $project->logo)}}">
+                <div>
+                    <img class="w-100" src="{{asset('storage/logos/' . $project->logo)}}" alt="{{$project->title}}">
+                </div>
+                <input type="file" class="form-control @error('logo') is-invalid @enderror" id="logo" name="logo">
             </div>
             @error('logo')
                 <div class="invalid-feedback">{{ $message }}</div>

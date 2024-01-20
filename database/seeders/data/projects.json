@@ -6,5 +6,53 @@
     "image": "boolflix.png",
     "status": true,
     "description": "Una rivisitazione personale di Netflix, realizzata per esercitarmi con Vue e Vite. Il progetto BoolFlix mira a fornire un'esperienza coinvolgente per la fruizione di contenuti multimediali, offrendo una vasta gamma di film e serie TV. Scopri le nuove funzionalità implementate con tecnologie all'avanguardia e goditi la navigazione intuitiva attraverso il vasto catalogo di intrattenimento."
+  },
+  {
+    "title": "MasterStudy",
+    "github": "https://github.com/leonardomastrangelo/proj-html-vuejs",
+    "logo": "master-study-logo.png",
+    "image": "master-study.png",
+    "status": true,
+    "description": "Il progetto 'Master Study' mira a rivoluzionare l'approccio all'istruzione superiore offrendo una vasta gamma di corsi innovativi. Attraverso una piattaforma online intuitiva, gli studenti accedono a corsi accademici avanzati, integrati da moduli pratici e progetti collaborativi. L'obiettivo è fornire una formazione completa, unendo teoria e pratica per preparare gli studenti alle sfide del mondo reale. Con un focus sull'interdisciplinarietà, Master Study si propone di creare professionisti altamente qualificati e adattabili, pronti a eccellere in un ambiente lavorativo in continua evoluzione."
+  },
+  {
+    "title": "Spotify",
+    "github": "https://github.com/leonardomastrangelo/html-css-spotifyweb",
+    "logo": "spotify-logo.png",
+    "image": "spotify.png",
+    "status": true,
+    "description": "La mia versione di Spotify per l'allenamento offre un mix motivante di brani che spaziano da ritmi energici a melodie rilassanti. Personalizzo playlist dinamiche per ogni fase dell'allenamento, garantendo un'esperienza sonora coinvolgente. La chiave è la varietà: stimolo costante per sfidare mente e corpo. Scopri il potere della musica nel potenziare le tue performance e rendere ogni sessione di allenamento un'esperienza unica."
+  },
+  {
+    "title": "Dropbox",
+    "github": "https://github.com/leonardomastrangelo/htmlcss-dropbox",
+    "logo": "dropbox-logo.png",
+    "image": "dropbox.png",
+    "status": true,
+    "description": "La mia versione personalizzata di Dropbox per l'organizzazione offre un sistema di archiviazione intuitivo per documenti e progetti. Creo una struttura di cartelle efficiente, consentendo un rapido accesso e una gestione senza sforzi. Massimizzo la collaborazione condividendo facilmente file e garantendo la sicurezza dei dati. Dropbox diventa così il mio alleato per mantenere ordine e produttività nella gestione dei documenti, semplificando la condivisione e garantendo la sicurezza delle informazioni."
+  },
+  {
+    "title": "Discord",
+    "github": "https://github.com/leonardomastrangelo/htmlcss-discord",
+    "logo": "discord-logo.png",
+    "image": "discord.png",
+    "status": true,
+    "description": "La mia versione personalizzata di Discord per la comunicazione è un rifugio virtuale per la connessione e la collaborazione. Creo server tematici organizzati, offrendo canali dedicati a progetti, discussioni e svago. Implemento bot per automatizzare funzioni e migliorare l'esperienza utente. Discord diventa così il mio hub digitale per una comunicazione fluida, efficiente e divertente, unendo persone e idee in un ambiente virtuale accogliente."
+  },
+  {
+    "title": "Boolando",
+    "github": "https://github.com/leonardomastrangelo/html-css-boolando",
+    "logo": "boolando-logo.png",
+    "image": "boolando.png",
+    "status": true,
+    "description": "La mia versione personalizzata di Zalando per lo shopping online è uno stile di vita digitale. Creo liste desideri e filtri intelligenti per una ricerca personalizzata. Sfrutto le notifiche per le offerte e le nuove tendenze. Zalando diventa così la mia destinazione di moda online, offrendo un'esperienza di shopping su misura, con un tocco personale e la scoperta continua di nuovi stili."
+  },
+  {
+    "title": "Boolearn",
+    "github": "https://github.com/leonardomastrangelo/boolearn",
+    "logo": "boolearn-logo.png",
+    "image": "boolearn.png",
+    "status": true,
+    "description": "Lavoro di gruppo natalizio"
   }
 ]
