@@ -2,6 +2,9 @@ import "./bootstrap";
 import "~resources/scss/app.scss";
 import * as bootstrap from "bootstrap";
 import.meta.glob(["../img/**", "../fonts/**"]);
+import "./chart.js";
+import "./chartTension.js";
+import "./chartPie.js";
 
 const btns = document.querySelectorAll(".btn-danger");
 btns.forEach((btn) => {
